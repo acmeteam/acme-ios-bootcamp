@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="SegueNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nnB-3L-dCe">
+                                <rect key="frame" x="34.5" y="271.5" width="306" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-ED-P0F">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Segue without prepare"/>
+                                        <connections>
+                                            <segue destination="HPJ-mW-cLO" kind="show" id="ZMl-pL-M74"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm9-UX-ibA">
+                                        <rect key="frame" x="0.0" y="41" width="306" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Segue with prepare"/>
+                                        <connections>
+                                            <segue destination="HPJ-mW-cLO" kind="show" identifier="Segue With Prepare" id="C5I-iK-Jg2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwf-gD-j7e">
+                                        <rect key="frame" x="0.0" y="82" width="306" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Segue through button action"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3W-3A-qHw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaI-Kb-SxN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rQz-Eg-d5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92025882005691528" green="0.97392350435256958" blue="0.90762323141098022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zaI-Kb-SxN" firstAttribute="centerX" secondItem="nnB-3L-dCe" secondAttribute="centerX" id="80Z-Be-sJ3"/>
+                            <constraint firstItem="nnB-3L-dCe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KKf-3m-mUR"/>
+                            <constraint firstItem="zaI-Kb-SxN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="X73-Oz-YfG"/>
+                            <constraint firstItem="nnB-3L-dCe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJb-4j-Y0n"/>
+                            <constraint firstItem="zaI-Kb-SxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rSq-iH-HhS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="HPJ-mW-cLO" kind="show" identifier="Segue Through Button Action" id="fjS-hh-zjv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="63"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="PjJ-s4-Oyt">
+            <objects>
+                <viewController id="HPJ-mW-cLO" customClass="SecondViewController" customModule="SegueNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHr-rp-SGN"/>
+                        <viewControllerLayoutGuide type="bottom" id="GaI-aJ-aXA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AbX-70-NJM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hK3-Gx-3nr">
+                                <rect key="frame" x="66.5" y="312.5" width="242" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-hN-8J5">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Segue without prepare"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="wvA-fq-BTB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF5-x1-fp3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="x3b-bW-Mtv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NaN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUY-Rl-Ued">
+                                <rect key="frame" x="16" y="96" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="2iO-uV-3jU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82134032249450684" green="0.88928502798080444" blue="0.95597571134567261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iF5-x1-fp3" firstAttribute="centerX" secondItem="hK3-Gx-3nr" secondAttribute="centerX" id="BQg-XC-TKh"/>
+                            <constraint firstItem="qUY-Rl-Ued" firstAttribute="top" secondItem="iF5-x1-fp3" secondAttribute="bottom" constant="8" symbolic="YES" id="BY0-aJ-fwq"/>
+                            <constraint firstItem="hK3-Gx-3nr" firstAttribute="centerY" secondItem="AbX-70-NJM" secondAttribute="centerY" id="Nzo-0I-OK5"/>
+                            <constraint firstItem="qUY-Rl-Ued" firstAttribute="centerX" secondItem="iF5-x1-fp3" secondAttribute="centerX" id="cvA-qp-PrB"/>
+                            <constraint firstItem="qUY-Rl-Ued" firstAttribute="leading" secondItem="AbX-70-NJM" secondAttribute="leadingMargin" id="e1G-Xi-iiO"/>
+                            <constraint firstItem="iF5-x1-fp3" firstAttribute="top" secondItem="dHr-rp-SGN" secondAttribute="bottom" constant="8" symbolic="YES" id="kN2-Lv-XNR"/>
+                            <constraint firstItem="hK3-Gx-3nr" firstAttribute="centerX" secondItem="AbX-70-NJM" secondAttribute="centerX" id="uDa-DI-bDj"/>
+                            <constraint firstItem="iF5-x1-fp3" firstAttribute="leading" secondItem="AbX-70-NJM" secondAttribute="leading" id="xRW-m6-fDT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wayWeCame" destination="qUY-Rl-Ued" id="ACv-fG-ZI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxu-ej-i1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="63"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fjS-hh-zjv"/>
+    </inferredMetricsTieBreakers>
+</document>
