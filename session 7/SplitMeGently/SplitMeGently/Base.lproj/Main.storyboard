@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TOK-UO-tTY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MasterIndexVC-->
+        <scene sceneID="AgR-S6-ewH">
+            <objects>
+                <viewController title="MasterIndexVC" id="cGO-Ow-Rwe" customClass="IndexViewController" customModule="SplitMeGently" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zve-ek-8YI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ze-48-NjS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hD0-gh-V96">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jungle" translatesAutoresizingMaskIntoConstraints="NO" id="iSr-0g-ZZS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XNR-wc-DKF">
+                                <rect key="frame" x="143" y="242" width="89" height="183"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGY-Ir-b7C">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Ferret">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DDh-BR-zxL" kind="showDetail" identifier="showFerret" id="nbO-H7-5Gm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOW-RK-pgv">
+                                        <rect key="frame" x="0.0" y="66" width="89" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Panda">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DDh-BR-zxL" kind="showDetail" identifier="showPanda" id="lk5-18-8GP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-sY-gM5">
+                                        <rect key="frame" x="0.0" y="132" width="89" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Tiger">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DDh-BR-zxL" kind="showDetail" identifier="showTiger" id="duT-sQ-wyG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iSr-0g-ZZS" firstAttribute="top" secondItem="Zve-ek-8YI" secondAttribute="bottom" id="839-mB-ccJ"/>
+                            <constraint firstItem="XNR-wc-DKF" firstAttribute="centerY" secondItem="hD0-gh-V96" secondAttribute="centerY" id="KXt-E5-p9d"/>
+                            <constraint firstItem="iSr-0g-ZZS" firstAttribute="leading" secondItem="hD0-gh-V96" secondAttribute="leading" id="N9U-4O-0m5"/>
+                            <constraint firstItem="2Ze-48-NjS" firstAttribute="top" secondItem="iSr-0g-ZZS" secondAttribute="bottom" id="g1j-I9-X7s"/>
+                            <constraint firstItem="XNR-wc-DKF" firstAttribute="centerX" secondItem="hD0-gh-V96" secondAttribute="centerX" id="hS2-lg-dAW"/>
+                            <constraint firstAttribute="trailing" secondItem="iSr-0g-ZZS" secondAttribute="trailing" id="n41-Uh-Kpg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CIV-F5-vPP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6Y-Ya-cjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767.1999999999998" y="-83.208395802098963"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="5FJ-lp-Q9e">
+            <objects>
+                <splitViewController id="TOK-UO-tTY" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="64Q-eb-9Jk" kind="relationship" relationship="masterViewController" id="u8Q-Ya-MEg"/>
+                        <segue destination="DDh-BR-zxL" kind="relationship" relationship="detailViewController" id="UZh-gx-YEz"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7y-DY-gyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="140"/>
+        </scene>
+        <!--Atlas View Controller-->
+        <scene sceneID="DdQ-Dh-wjd">
+            <objects>
+                <viewController id="DDh-BR-zxL" customClass="AtlasViewController" customModule="SplitMeGently" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="THF-7K-zDf"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQF-qY-0Hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0rm-Bz-RRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-JZ-QQV">
+                                <rect key="frame" x="16" y="20" width="343" height="639"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ferret" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-2q-6zN">
+                                        <rect key="frame" x="17" y="0.0" width="309.5" height="309.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GKd-2q-6zN" secondAttribute="height" multiplier="1:1" id="yDz-tw-7WZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M7s-3q-tzD">
+                                        <rect key="frame" x="0.0" y="329.5" width="343" height="309.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXq-mu-EUV">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hwQ-3N-ZcS">
+                                                <rect key="frame" x="0.0" y="37" width="343" height="272.5"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k9q-JZ-QQV" firstAttribute="leading" secondItem="0rm-Bz-RRo" secondAttribute="leadingMargin" id="Kck-PL-f7e"/>
+                            <constraint firstItem="XQF-qY-0Hz" firstAttribute="top" secondItem="k9q-JZ-QQV" secondAttribute="bottom" constant="8" symbolic="YES" id="PRV-ML-Qhc"/>
+                            <constraint firstItem="k9q-JZ-QQV" firstAttribute="trailing" secondItem="0rm-Bz-RRo" secondAttribute="trailingMargin" id="QGK-0S-Nkv"/>
+                            <constraint firstItem="k9q-JZ-QQV" firstAttribute="top" secondItem="THF-7K-zDf" secondAttribute="bottom" id="Stl-CR-H80"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailsTextView" destination="hwQ-3N-ZcS" id="LQo-ec-wXO"/>
+                        <outlet property="image" destination="GKd-2q-6zN" id="xyE-PZ-t1J"/>
+                        <outlet property="titleName" destination="BXq-mu-EUV" id="nEF-QS-1LI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1m4-mw-wRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="648"/>
+        </scene>
+        <!--MasterNVC-->
+        <scene sceneID="gp4-gT-yRf">
+            <objects>
+                <navigationController title="MasterNVC" automaticallyAdjustsScrollViewInsets="NO" id="64Q-eb-9Jk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NIx-2z-2AY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cGO-Ow-Rwe" kind="relationship" relationship="rootViewController" id="7OI-zx-Wl1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="023-pd-Chm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="-83.208395802098963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ferret" width="1500" height="1500"/>
+        <image name="jungle" width="1024" height="768"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nbO-H7-5Gm"/>
+    </inferredMetricsTieBreakers>
+</document>
