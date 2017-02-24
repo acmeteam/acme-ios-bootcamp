@@ -1,0 +1,124 @@
+{
+"entries": [
+{
+"group": "Food",
+"details": "Big tasty humburger",
+"amount": "2.5",
+"date": "2016-12-25 12:32:41"
+},
+{
+"group": "Cloth",
+"details": "Nice red t-shirt from ACME store",
+"amount": "2.2",
+"date": "2016-10-13 11:21:02"
+},
+{
+"group": "Fuel",
+"details": "Gas station on the highway E75",
+"amount": "20.1",
+"date": "2016-11-15 12:12:23"
+},
+{
+"group": "Gift",
+"details": "Birthday present for my sweet wife",
+"amount": "20.1",
+"date": "2016-11-15 12:12:23"
+},
+{
+"group": "Toys",
+"details": "Big LEGO castle",
+"amount": "25.1",
+"date": "2017-01-15 11:10:23"
+},
+{
+"group": "Sport",
+"details": "Tyres for bicycle, bell, chain and pedals. Bicycle service fees for installing new equipement",
+"amount": "30.0",
+"date": "2016-09-11 17:09:12"
+},
+{
+"group": "Transportation",
+"details": "BusPlus prepaid credit",
+"amount": "10.0",
+"date": "2017-01-20 12:05:08"
+},
+{
+"group": "Tech",
+"details": "Some killer Hi-Fi system in silver color",
+"amount": "500.0",
+"date": "2016-12-31 11:07:08"
+},
+{
+"group": "Music",
+"details": "Renting a studio for band rehearsal",
+"amount": "15.2",
+"date": "2016-10-29 10:07:08"
+},
+{
+"group": "Party",
+"details": "Beer after work",
+"amount": "8.2",
+"date": "2017-01-20 12:05:08"
+},
+{
+"group": "Food",
+"details": "Big tasty humburger",
+"amount": "2.5",
+"date": "2016-12-25 12:32:41"
+},
+{
+"group": "Cloth",
+"details": "Nice red t-shirt from ACME store",
+"amount": "2.2",
+"date": "2016-10-13 11:21:02"
+},
+{
+"group": "Fuel",
+"details": "Gas station on the highway E75",
+"amount": "20.1",
+"date": "2016-11-15 12:12:23"
+},
+{
+"group": "Gift",
+"details": "Birthday present for my sweet wife",
+"amount": "20.1",
+"date": "2016-11-15 12:12:23"
+},
+{
+"group": "Toys",
+"details": "Big LEGO castle",
+"amount": "25.1",
+"date": "2017-01-15 11:10:23"
+},
+{
+"group": "Sport",
+"details": "Tyres for bicycle, bell, chain and pedals. Bicycle service fees for installing new equipement",
+"amount": "30.0",
+"date": "2016-09-11 17:09:12"
+},
+{
+"group": "Transportation",
+"details": "BusPlus prepaid credit",
+"amount": "10.0",
+"date": "2017-01-20 12:05:08"
+},
+{
+"group": "Tech",
+"details": "Some killer Hi-Fi system in silver color",
+"amount": "500.0",
+"date": "2016-12-31 11:07:08"
+},
+{
+"group": "Music",
+"details": "Renting a studio for band rehearsal",
+"amount": "15.2",
+"date": "2016-10-29 10:07:08"
+},
+{
+"group": "Party",
+"details": "Beer after work",
+"amount": "8.2",
+"date": "2017-01-20 12:05:08"
+}
+]
+}
