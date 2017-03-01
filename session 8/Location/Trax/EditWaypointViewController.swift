@@ -40,6 +40,11 @@ class EditWaypointViewController: UIViewController, UITextFieldDelegate
         infoTextField?.text = waypointToEdit?.info
     }
     
+    /*
+    @IBAction func done(sender:UIBarButtonItem) {
+        presentingViewController?.dismiss(animated: true, completion: nil);
+    }
+    */
     fileprivate var ntfObserver: NSObjectProtocol?
     fileprivate var itfObserver: NSObjectProtocol?
 
