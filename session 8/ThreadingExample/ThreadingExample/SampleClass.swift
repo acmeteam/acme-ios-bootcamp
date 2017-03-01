@@ -12,10 +12,10 @@ class SampleClass{
     
     private let lockingQueue = DispatchQueue(label: "myLockingQueue")
     
-    var _someResource: String = ""
+    private var _someResource: String = ""
     var someResource : String{
         get{
-            return lockingQueue.sync{_someResource }
+            return lockingQueue.sync{return _someResource}
         }
         set{
             lockingQueue.sync {_someResource = newValue}
